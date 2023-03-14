@@ -5,7 +5,7 @@ console.log('Hello, world !')
 console.log(`Hello, world !`)
 
 //alert emite uma alerta com uma mensagem
-//alert("Alerta");
+alert("Alerta");
 
 //Variaveis
 
@@ -22,6 +22,7 @@ console.log(`Hello, world !`)
     //Pode ter outras com mesmo nome 
     //Pode ser acessada por outros blocos de código
 
+//O usuario digita o valor
 let nome = prompt('Digite seu nome')
 
 console.log(`O usuario ${nome} eh diferenciado`)

@@ -3,4 +3,5 @@ let sobrNome = prompt("Digite seu sobre nome");
 let idade = prompt("Digite sua idade");
 let id = Math.floor(Math.random() * 100);
 
-console.log(`Ola, ${nome}${sobrNome}, voce tem ${idade} e seu id é ${id}`);
+console.log(`Ola, ${nome} ${sobrNome}, voce tem ${idade} e seu id eh ${id}`);
+alert(`Ola, ${nome} ${sobrNome}, voce tem ${idade} e seu id eh ${id}`);
