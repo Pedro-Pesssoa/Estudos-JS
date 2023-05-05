@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+
+<SCript>
+
+    function segundoMaior(num) {
+
+        let maior = num[0]
+        let segMaior = num[0]
+
+        for(let i = 0; i < num.length; i++){
+
+            if(num[i] > maior){
+                segMaior = maior
+                maior =  num[i]
+            }
+        }
+
+        return segMaior
+    }
+
+    let resultado
+    const num = []
+    const fraseNum = prompt('Digite uma lista de numeros separados por virgula');
+
+    for(let i = 0; i < fraseNum.length; i++){
+
+        if(fraseNum[i] !== ','){
+            num.push( parseInt(fraseNum[i]));
+        }
+    }
+
+    resultado = segundoMaior(num);
+    console.log(`Segundo maior: ${resultado}`)
+</SCript>

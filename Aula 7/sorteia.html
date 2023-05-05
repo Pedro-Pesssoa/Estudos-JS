@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script>
+
+function mostra(texto){
+
+    document.write(texto)
+}
+
+function sorteia(num){
+
+    return Math.round(Math.random() * num)
+}
+
+let numero = parseInt(prompt("Digite um numero maior que 0"))
+
+let numeroPensado = sorteia(numero)
+
+let resposta = parseInt(prompt(`Adivinhe o numero entre 1 e ${numero}`))
+
+if(resposta == numeroPensado){
+    mostra(`Você acertou !!!`)
+}else if(resposta > numeroPensado){
+    mostra(`Errado, o numero que você digitou é maior que a resposta <br>Resposta certa: ${numeroPensado}`)
+}else if(resposta < numeroPensado){
+    mostra(`Errado, o numero que você digitou é menor que a resposta <br>Resposta certa: ${numeroPensado}`)
+}
+
+</script>

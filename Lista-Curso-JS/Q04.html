@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+
+<SCript>
+    const num = []
+    const fraseNum = prompt('Digite uma lista de numeros separados por virgula');
+
+    for(let i = 0; i < fraseNum.length; i++){
+
+        if(fraseNum[i] !== ','){
+            num.push( parseInt(fraseNum[i]));
+        }
+    }
+
+    let soma = 0, med
+
+    for(let l = 0; l < num.length; l++){
+
+        soma = soma + parseInt(num[l]);
+    }
+    med = soma/num.length
+
+    console.log(`Média: ${med}`)
+</SCript>
