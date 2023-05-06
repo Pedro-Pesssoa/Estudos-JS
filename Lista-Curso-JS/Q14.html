@@ -1,0 +1,31 @@
+<meta charset="UTF-8"> 
+
+<SCript>
+
+    alert("Informe seus dados")
+    const nome = prompt("Nome: ");
+    const idade = prompt("Idade: ");
+    const celular = prompt("Celular: ");
+    const cidade = prompt("Cidade: ");
+
+    const usuario = {
+        nome: nome,
+        idade: idade,
+        celular: celular,
+        cidade: cidade
+    };
+
+    const mudar = confirm("Quer alterar seus dados ?");
+    console.log("Seus dados atuais: ", usuario);
+
+    if(mudar){
+
+        alert("Informe seus novos dados")
+        usuario.nome = prompt("Nome: ");
+        usuario.idade = prompt("Idade: ");
+        usuario.celular = prompt("Celular: ");
+        usuario.cidade = prompt("Cidade: ");
+
+        console.log("Seus novos dados atuais: ", usuario);
+    }
+</SCript>
