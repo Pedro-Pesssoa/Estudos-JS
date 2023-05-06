@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+
+<script>
+    const texto = prompt("Digite um texto: ");
+
+    function contaPalavra(texto) {
+
+        texto = texto.toLowerCase().replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+  
+        const palavras = texto.split(" ");
+        const cont = {};
+    
+        for (let i = 0; i < palavras.length; i++) {
+
+            cont[palavras[i]] = cont[palavras[i]] ? cont[palavras[i]] + 1 : 1;
+        }
+  
+        return cont;
+    }
+
+    console.log(contarPalavras(texto));
+</script>
